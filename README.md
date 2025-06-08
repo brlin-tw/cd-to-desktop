@@ -7,6 +7,49 @@ A fun (and highly unnecessary) hack to make the Bash shell's built-in `cd` comma
 
 \#bash \#hack \#fun
 
+## Prerequisites
+
+The following prerequisites must be met before using this product:
+
+* You need to be using the [Bash shell](https://www.gnu.org/software/bash/) as your command line interface.
+
+## Installation
+
+Refer to the following steps to install this product:
+
+1. Download the release archive from the [GitLab releases page](https://gitlab.com/brlin/cd-to-desktop/-/releases).
+1. Extract the archive to a directory of your choice.
+1. Add the following line to your `~/.bashrc` file:
+
+   ```bash
+   source /path/to/cd-to-desktop/cd-to-desktop.source.sh
+   ```
+
+   Replace the `/path/to/cd-to-desktop/` placeholder text with the actual path where you extracted the archive.
+1. Restart your currently running bash session to apply the changes, or run the following command to reload the updated `~/.bashrc` file:
+
+   ```bash
+   source ~/.bashrc
+   ```
+
+## Usage
+
+If the [Installation](#installation) went well, you should be able to use the `cd` command to switch the working directory to your Desktop folder by default, like so:
+
+```bash
+cd
+```
+
+This product adheres to the xdg-user-dirs de facto standard, ensuring compatibility for users whose Desktop folder is located in a non-default path or named in a different language.
+
+## Credits
+
+This product is inspired from the [CD shortcut : r/bash](https://www.reddit.com/r/bash/comments/1l69apz/cd_shortcut/) Reddit post, by [bakismarsh](https://www.reddit.com/user/bakismarsh/).
+
+## See also
+
+Check out my [brlin-tw/dot-bashrc.d: Distributed bash run commands(rc) management solution.](https://github.com/brlin-tw/dot-bashrc.d), where you can easily integrate this product by just installing the file to the `~/.bashrc.d/` directory after installing it.
+
 ## References
 
 The following materials are referenced during the development of this project:
