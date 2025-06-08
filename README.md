@@ -36,11 +36,17 @@ Refer to the following steps to install this product:
 
 If the [Installation](#installation) went well, you should be able to use the `cd` command to switch the working directory to your Desktop folder by default, like so:
 
-```bash
-cd
+```text
+brlin@brlin-fw13:~/Documents/cd-to-desktop$ cd
+brlin@brlin-fw13:~/Desktop$
 ```
 
 This product adheres to the xdg-user-dirs de facto standard, ensuring compatibility for users whose Desktop folder is located in a non-default path or named in a different language.
+
+```text
+brlin@brlin-fw13:~/文件/cd-to-desktop$ cd
+brlin@brlin-fw13:~/桌面$
+```
 
 To change the working directory to a different location, you can still use the `cd` command with an argument, like so:
 
