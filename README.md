@@ -42,6 +42,18 @@ cd
 
 This product adheres to the xdg-user-dirs de facto standard, ensuring compatibility for users whose Desktop folder is located in a non-default path or named in a different language.
 
+To change the working directory to a different location, you can still use the `cd` command with an argument, like so:
+
+```bash
+cd /path/to/your/directory
+```
+
+If you want to bypass this product and use the original `cd` command, you can use the `command` builtin command, like so:
+
+```bash
+command cd /path/to/your/directory
+```
+
 ## Credits
 
 This product is inspired from the [CD shortcut : r/bash](https://www.reddit.com/r/bash/comments/1l69apz/cd_shortcut/) Reddit post, by [bakismarsh](https://www.reddit.com/user/bakismarsh/).
